@@ -1,1 +1,1 @@
-TypeScript training~`
+TypeScript training
