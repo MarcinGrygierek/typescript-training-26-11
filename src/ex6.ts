@@ -8,3 +8,7 @@ const result2: string = <string>baz(20, 20);
 
 console.log(result, typeof result);
 console.log(result2, typeof result2);
+
+// Unikamy czegoś takiego! W tej sytuacji typ po transpilacji do JS jest niezgodny z zapisem w TS
+const val2: number = "Lorem ipsum" as unknown as number;
+console.log(val2);
