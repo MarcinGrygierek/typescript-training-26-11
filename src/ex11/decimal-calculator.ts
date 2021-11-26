@@ -1,4 +1,4 @@
-import { AbstractCalculator } from "./calculator";
+import { AbstractCalculator, Operation } from "./calculator";
 
 class DecimalCalculator extends AbstractCalculator {
     add = (a: number, b: number): number => {
@@ -29,6 +29,8 @@ class DecimalCalculator extends AbstractCalculator {
 }
 
 const calculator = new DecimalCalculator();
-calculator.divide(10, 2);
-calculator.add(10,2);
+calculator.calculate(10, 20, Operation.ADD);
+calculator.calculate(10, 20, Operation.MULTIPLY);
+calculator.calculate(10, 20, Operation.SUBTRACT);
+calculator.calculate(10, 20, Operation.DIVIDE);
 calculator.display();

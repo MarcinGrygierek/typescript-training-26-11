@@ -10,7 +10,6 @@ const handleCalculation = (a: number, b: number, type: Type): number => {
         case Type.MULTIPLY: return a * b;
         case Type.POWER: return Math.pow(a, b);
         case Type.SQUARE_ROOT: return Math.sqrt(a);
-        default: throw new Error('Not supported!')
     }
 }
 
